@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Feedback Form</title>
+
+</head>
+
+<body>
+
+    <h2>Feedback Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <br>
+
+        <input type="text" 
+        placeholder="Enter your full name"
+        required
+        minlength="3">
+
+        <br><br>
+
+        <label>Email Address</label>
+        <br>
+
+        <input type="email"
+        placeholder="example@gmail.com"
+        required>
+
+        <br><br>
+
+        <h3>Rate Our Website</h3>
+
+        <input type="radio" name="rating" value="Very Satisfied">
+        <label>Very Satisfied</label>
+
+        <br>
+
+        <input type="radio" name="rating" value="Satisfied">
+        <label>Satisfied</label>
+
+        <br>
+
+        <input type="radio" name="rating" value="Neutral">
+        <label>Neutral</label>
+
+        <br>
+
+        <input type="radio" name="rating" value="Unsatisfied">
+        <label>Unsatisfied</label>
+
+        <br><br>
+
+        <h3>Your Interests</h3>
+
+        <input type="checkbox" name="interest1">
+        <label>Web Development</label>
+
+        <br>
+
+        <input type="checkbox" name="interest2">
+        <label>Mobile Development</label>
+
+        <br>
+
+        <input type="checkbox" name="interest3">
+        <label>AI & Machine Learning</label>
+
+        <br><br>
+
+        <label>Select Country</label>
+
+        <br>
+
+        <select required>
+
+            <option value="">--Select Country--</option>
+
+            <option>Nepal</option>
+            <option>India</option>
+            <option>USA</option>
+
+        </select>
+
+        <br><br>
+
+        <label>Write your feedback here</label>
+
+        <br>
+
+        <textarea 
+        rows="5"
+        cols="30"
+        placeholder="Write your feedback here"
+        maxlength="200"
+        required></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <br>
+
+    <a href="index.html">Back to Home</a>
+
+    <br><br>
+
+    <a href="about.html">About Page</a>
+
+</body>
+
+</html>
