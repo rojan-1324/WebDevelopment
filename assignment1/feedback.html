@@ -3,114 +3,108 @@
 
 <head>
 
-    <title>Feedback Form</title>
+<title>Feedback Form</title>
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <h2>Feedback Form</h2>
+<div class="navbar">
 
-    <form>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="feedback.html">Feedback</a>
 
-        <label>Full Name</label>
-        <br>
+</div>
 
-        <input type="text" 
-        placeholder="Enter your full name"
-        required
-        minlength="3">
+<h2>Feedback Form</h2>
 
-        <br><br>
+<div class="box">
 
-        <label>Email Address</label>
-        <br>
+<form>
 
-        <input type="email"
-        placeholder="example@gmail.com"
-        required>
+<label>Full Name</label>
+<br>
 
-        <br><br>
+<input type="text" placeholder="Enter your full name" required minlength="3">
 
-        <h3>Rate Our Website</h3>
+<br><br>
 
-        <input type="radio" name="rating" value="Very Satisfied">
-        <label>Very Satisfied</label>
+<label>Email Address</label>
+<br>
 
-        <br>
+<input type="email" placeholder="example@gmail.com" required>
 
-        <input type="radio" name="rating" value="Satisfied">
-        <label>Satisfied</label>
+<br><br>
 
-        <br>
+<h3 class="sticky">Rate Our Website</h3>
 
-        <input type="radio" name="rating" value="Neutral">
-        <label>Neutral</label>
+<input type="radio" name="rating">
+<label>Very Satisfied</label>
 
-        <br>
+<br>
 
-        <input type="radio" name="rating" value="Unsatisfied">
-        <label>Unsatisfied</label>
+<input type="radio" name="rating">
+<label>Satisfied</label>
 
-        <br><br>
+<br>
 
-        <h3>Your Interests</h3>
+<input type="radio" name="rating">
+<label>Neutral</label>
 
-        <input type="checkbox" name="interest1">
-        <label>Web Development</label>
+<br>
 
-        <br>
+<input type="radio" name="rating">
+<label>Unsatisfied</label>
 
-        <input type="checkbox" name="interest2">
-        <label>Mobile Development</label>
+<br><br>
 
-        <br>
+<h3>Your Interests</h3>
 
-        <input type="checkbox" name="interest3">
-        <label>AI & Machine Learning</label>
+<input type="checkbox">
+<label>Web Development</label>
 
-        <br><br>
+<br>
 
-        <label>Select Country</label>
+<input type="checkbox">
+<label>Mobile Development</label>
 
-        <br>
+<br>
 
-        <select required>
+<input type="checkbox">
+<label>AI & Machine Learning</label>
 
-            <option value="">--Select Country--</option>
+<br><br>
 
-            <option>Nepal</option>
-            <option>India</option>
-            <option>USA</option>
+<label>Select Country</label>
 
-        </select>
+<br>
 
-        <br><br>
+<select required>
 
-        <label>Write your feedback here</label>
+<option>Nepal</option>
+<option>India</option>
+<option>USA</option>
 
-        <br>
+</select>
 
-        <textarea 
-        rows="5"
-        cols="30"
-        placeholder="Write your feedback here"
-        maxlength="200"
-        required></textarea>
+<br><br>
 
-        <br><br>
+<label>Write your feedback here</label>
 
-        <button type="submit">Submit</button>
+<br>
 
-    </form>
+<textarea rows="5" cols="30" maxlength="200" placeholder="Write your feedback here" required></textarea>
 
-    <br>
+<br><br>
 
-    <a href="index.html">Back to Home</a>
+<button type="submit">Submit</button>
 
-    <br><br>
+</form>
 
-    <a href="about.html">About Page</a>
+</div>
 
 </body>
 
