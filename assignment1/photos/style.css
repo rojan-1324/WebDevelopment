@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-top: 90px;
+}
+
+h1, h2 {
+  color: darkblue;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+.special {
+  background-color: lightyellow;
+  padding: 10px;
+}
+
+#mainheading {
+  color: darkred;
+}
+
+.box {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 15px;
+  box-sizing: border-box;
+  background-color: white;
+  position: relative;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+.important {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: yellow;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.sticky {
+  position: sticky;
+  top: 90px;
+  background-color: orange;
+  padding: 5px;
+  z-index: 10;
+}
+
+.photos-flex img, 
+.photos-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.photos-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.photos-grid {
+  display: grid;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .photos-flex {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .photos-flex > *, 
+  .photos-flex img {
+    flex: 0 0 100%;
+    width: 100%; 
+    max-width: 100%;
+  }
+
+  .photos-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .photos-flex {
+    flex-direction: row; 
+  }
+ 
+  .photos-flex > *,
+  .photos-flex img {
+    flex: 0 0 calc(50% - 15px);
+    width: auto; /* Overrides the global width: 100% so flex-basis can work */
+  }
+  .photos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .photos-flex {
+    flex-direction: row;
+  }
+  .photos-flex > *,
+  .photos-flex img {
+    flex: 0 0 calc(25% - 15px);
+    width: auto;
+  }
+  .photos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
